@@ -7,8 +7,6 @@
       v-for="(item,i) in items"
       :key="i"
       :src="item.src"
-      reverse-transition="fade-transition"
-      transition="fade-transition"
     ></v-carousel-item>
   </v-carousel>
 </template>
@@ -19,16 +17,16 @@ export default {
     return {
       items: [
         {
-          src: require('../assets/hdbgf.jpg')
+          src: require('../assets/1.jpg')
         },
         {
-          src: require('../assets/dfg.jpg')
+          src: require('../assets/2.jpg')
         },
         {
-          src: require('../assets/comidacubana11_800.jpg')
+          src: require('../assets/3.jpg')
         },
         {
-          src: require('../assets/tamal-en-cazuela-cuban-tradition_hero.jpg')
+          src: require('../assets/4.jpg')
         }
       ]
     }

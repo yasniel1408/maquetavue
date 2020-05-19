@@ -20,6 +20,13 @@
         required
       ></v-text-field>
 
+      <v-text-field two-line
+        v-model="texto"
+        :rules="textoRules"
+        label="Text"
+        required
+      ></v-text-field>
+
       <v-select
         v-model="select"
         :items="items"

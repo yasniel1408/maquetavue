@@ -28,6 +28,28 @@
       <v-card-text class="white--text">
         {{ new Date().getFullYear() }} — <strong>Yasniel Fajardo Egues</strong>
       </v-card-text>
+      <v-spacer></v-spacer>
+      <v-btn icon>
+        <v-icon>mdi-facebook</v-icon>
+      </v-btn>
+      <v-btn icon>
+        <v-icon>mdi-youtube</v-icon>
+      </v-btn>
+      <v-btn icon>
+        <v-icon>mdi-instagram</v-icon>
+      </v-btn>
+      <v-btn icon>
+        <v-icon>mdi-snapchat</v-icon>
+      </v-btn>
+      <v-btn icon>
+        <v-icon>mdi-google</v-icon>
+      </v-btn>
+      <v-btn icon>
+        <v-icon>mdi-pinterest</v-icon>
+      </v-btn>
+      <v-btn icon>
+        <v-icon>mdi-twitter</v-icon>
+      </v-btn>
     </v-card>
   </v-footer>
 </template>

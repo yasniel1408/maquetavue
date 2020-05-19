@@ -2,18 +2,20 @@
     <v-container >
 
       <v-row>
-        <h1>Productos Destacados</h1>
-        <v-banner two-line>
+        <v-container>
+        <h1 id="textoproductosdestacados">Productos Destacados</h1>
+        </v-container>
+        <v-banner two-line id="textodescripcion">
           <v-avatar
             slot="icon"
             color="primary accent-4"
             size="40"
           >
             <v-icon
-              icon="mdi-chef-hat"
+              icon="mdi-heart"
               color="white"
             >
-              mdi-chef-hat
+              mdi-heart
             </v-icon>
           </v-avatar>
           Three line text string example with two actions. One to two lines is preferable. Three lines should be considered the maximum string length on desktop in order to keep messages short and actionable.
@@ -66,7 +68,7 @@ export default {
     cards: [
       { title: 'Dulces', src: require('../assets/cookies.jpg'), flex: 8 },
       { title: 'Bebidas', src: require('../assets/cafe.png'), flex: 4 },
-      { title: 'Naturales', src: require('../assets/caprese.jpg'), flex: 6 },
+      { title: 'Frutas', src: require('../assets/caprese.jpg'), flex: 6 },
       { title: 'Carnes', src: require('../assets/ropa-vieja-04.jpg'), flex: 6 }
     ]
   })
@@ -76,6 +78,17 @@ export default {
 
   #destacados{
     margin-top: 90px !important;
+  }
+
+  #textoproductosdestacados{
+    font-size: 50px;
+    text-align: center !important;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  #textodescripcion{
+    margin-bottom: 30px;
   }
 
 </style>

@@ -1,6 +1,6 @@
 <template>
 <v-div>
-  <v-system-bar fixed color="primary darken-3"></v-system-bar>
+  <v-system-bar fixed color="primary darken-1"></v-system-bar>
 
   <v-app-bar
       color="primary"
@@ -12,16 +12,27 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-toolbar-title>
-        <v-img :src="require('../assets/logo.png')" width='200px'></v-img>
+        <v-icon
+          size="50px" id="iconologo"
+        >
+          mdi-chef-hat
+        </v-icon>
+      </v-toolbar-title>
+      <v-toolbar-title>
+        <v-img :src="require('../assets/logo.png')" width='240px'></v-img>
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
 
-      <v-text-field
-        hide-details
-        prepend-icon="mdi-magnify"
-        single-line
-      ></v-text-field>
+      <v-col
+        cols="3"
+        md="3"
+      >
+        <v-text-field
+          hide-details
+          prepend-icon="mdi-magnify"
+        ></v-text-field>
+      </v-col>
 
       <v-btn icon>
         <v-icon>mdi-cart-arrow-down</v-icon>
@@ -59,31 +70,42 @@
           </v-col>
         </v-row>
       </v-img>
-      <v-list
-        nav
-        dense
-      >
-        <v-list-item-group
-          v-model="group"
-          active-class="deep-purple--text text--accent-4"
-        >
-          <v-list-item>
-            <v-list-item-title > <v-lint text color="secondary" to="/" @click.stop="drawer = !drawer">Home</v-lint> </v-list-item-title>
-          </v-list-item>
 
-          <v-list-item>
-            <v-list-item-title > <v-lint text color="secondary" to="/about" @click.stop="drawer = !drawer">About</v-lint> </v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title > <v-lint text color="secondary" to="/contact" @click.stop="drawer = !drawer">Contact</v-lint> </v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title>Login</v-list-item-title>
-          </v-list-item>
-        </v-list-item-group>
-      </v-list>
+        <v-list rounded>
+          <v-subheader>ACCIONES</v-subheader>
+          <v-list-item-group v-model="item" color="primary">
+            <router-link to="/">
+              <v-list-item>
+                <v-list-item-icon>
+                  <v-icon >mdi-home</v-icon>
+                </v-list-item-icon>
+                <v-list-item-content>
+                  <v-list-item-title >INICIO</v-list-item-title>
+                </v-list-item-content>
+              </v-list-item>
+            </router-link>
+            <router-link to="/abaut">
+              <v-list-item>
+                <v-list-item-icon>
+                  <v-icon >mdi-book-information-variant</v-icon>
+                </v-list-item-icon>
+                <v-list-item-content>
+                  <v-list-item-title >SOBRE NOSOTROS</v-list-item-title>
+                </v-list-item-content>
+              </v-list-item>
+            </router-link>
+            <router-link to="/contact">
+              <v-list-item>
+                <v-list-item-icon>
+                  <v-icon >mdi-home</v-icon>
+                </v-list-item-icon>
+                <v-list-item-content>
+                  <v-list-item-title >CONTÁCTO</v-list-item-title>
+                </v-list-item-content>
+              </v-list-item>
+            </router-link>
+          </v-list-item-group>
+        </v-list>
     </v-navigation-drawer>
   </v-div>
 </template>
@@ -125,5 +147,10 @@ export default Vue.extend({
   }
   #paraversystembar{
     top:22px;
+  }
+  #iconologo{
+    position: fixed !important;
+    top:2px !important;
+    left: 50px !important;
   }
 </style>

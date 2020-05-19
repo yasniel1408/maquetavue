@@ -21,6 +21,7 @@ export default Vue.extend({
 </script>
 <style scoped>
   #margern{
-    margin-bottom:35px;
+    margin-bottom:75px;
   }
+
 </style>
