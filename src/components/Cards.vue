@@ -29,7 +29,8 @@
         <v-col
           v-for="card in cards"
           :key="card.title"
-          :cols="card.flex"
+          cols="12"
+          md="6"
         >
           <v-card>
             <v-img
@@ -40,6 +41,8 @@
             >
               <v-card-title v-text="card.title"></v-card-title>
             </v-img>
+
+            Three line text string example with two actions. One to two lines is preferable. Three lines should be considered the maximum string length on desktop in order to keep messages short and actionable.
 
             <v-card-actions>
               <v-spacer></v-spacer>
@@ -66,8 +69,8 @@
 export default {
   data: () => ({
     cards: [
-      { title: 'Dulces', src: require('../assets/cookies.jpg'), flex: 8 },
-      { title: 'Bebidas', src: require('../assets/cafe.png'), flex: 4 },
+      { title: 'Dulces', src: require('../assets/cookies.jpg'), flex: 6 },
+      { title: 'Bebidas', src: require('../assets/cafe.png'), flex: 6 },
       { title: 'Frutas', src: require('../assets/caprese.jpg'), flex: 6 },
       { title: 'Carnes', src: require('../assets/ropa-vieja-04.jpg'), flex: 6 }
     ]

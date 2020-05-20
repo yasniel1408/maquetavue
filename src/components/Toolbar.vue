@@ -6,6 +6,7 @@
       color="primary"
       dark
       fixed
+      flat
       id='paraversystembar'
     >
 
@@ -39,11 +40,11 @@
       </v-btn>
 
       <v-btn icon>
-        <v-icon>mdi-filter</v-icon>
+        <v-icon>mdi-account-circle</v-icon>
       </v-btn>
 
       <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
+        <v-icon>mdi-login</v-icon>
       </v-btn>
 
     </v-app-bar>
@@ -84,7 +85,7 @@
                 </v-list-item-content>
               </v-list-item>
             </router-link>
-            <router-link to="/abaut">
+            <router-link to="/about">
               <v-list-item>
                 <v-list-item-icon>
                   <v-icon >mdi-book-information-variant</v-icon>

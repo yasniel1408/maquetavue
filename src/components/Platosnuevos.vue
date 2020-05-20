@@ -4,22 +4,15 @@
       <h1 id="textoplatosextreno">Platos en extreno</h1>
     </v-container>
       <v-row>
-        <Cardlimpio/>
-        <Cardlimpio/>
-        <Cardlimpio/>
-        <Cardlimpio/>
-        <Cardlimpio/>
-        <Cardlimpio/>
-        <Cardlimpio/>
-        <Cardlimpio/>
+        <Cardsextreno/>
       </v-row>
   </v-container>
 </template>
 <script>
-import Cardlimpio from '@/components/Cardlimpio.vue'
+import Cardsextreno from '@/components/Cardsextreno.vue'
 export default {
   components: {
-    Cardlimpio
+    Cardsextreno
   }
 }
 </script>
@@ -32,7 +25,7 @@ export default {
     margin-bottom: 10px;
   }
   #platosextreno{
-    margin-bottom: 150px;
+    margin-bottom: 80px;
   }
 
 </style>
